@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/user/favicon-32x32.png" type="image/png" sizes="32x32">
+    <title>$1000/Month Money Machine System | Limited $27 Offer</title>
+    <style>
+        /* === CORE STYLES === */
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            line-height: 1.7;
+            color: #333;
+            max-width: 1100px;
+            margin: 0 auto;
+            background: #f8f9fa;
+        }
+        
+        .container {
+            background: white;
+            box-shadow: 0 5px 30px rgba(0,0,0,0.1);
+            overflow: hidden;
+            border-radius: 10px;
+        }
+        
+        /* === HEADER STYLES === */
+        .header {
+            text-align: center;
+            padding: 40px 20px;
+            background: linear-gradient(135deg, #069467 0%, #013b26 100%);
+            color: white;
+            position: relative;
+            margin-top: 50px;
+        }
+        
+        .header h1 {
+            font-size: 48px;
+            font-weight: 900;
+            margin: 0;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .header h2 {
+            font-size: 28px;
+            font-weight: 300;
+            margin: 10px 0 0;
+        }
+        
+        .discount-badge {
+            position: absolute;
+            top: 200px;
+            right: 20px;
+            background: #ff4757;
+            color: white;
+            padding: 10px 20px;
+            font-weight: bold;
+            border-radius: 50px;
+            transform: rotate(15deg);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { transform: rotate(15deg) scale(1); }
+            50% { transform: rotate(15deg) scale(1.05); }
+            100% { transform: rotate(15deg) scale(1); }
+        }
+        
+        /* === CONTENT STYLES === */
+        .content-box {
+            padding: 30px;
+            margin: 20px;
+            border-radius: 8px;
+        }
+        
+        .benefits {
+            background: #f0f5ff;
+            border-left: 5px solid #5b37b7;
+        }
+        
+        .bonuses {
+            background: #fff5f5;
+            border-left: 5px solid #ff4757;
+        }
+        
+        .guarantee {
+            background: #f0fff7;
+            border-left: 5px solid #2ecc71;
+        }
+        
+        /* === COMPONENT STYLES === */
+        .package-item {
+            display: flex;
+            align-items: center;
+            margin: 20px 0;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+        }
+        
+        .package-icon {
+            font-size: 40px;
+            margin-right: 20px;
+            color: #5b37b7;
+            min-width: 60px;
+            text-align: center;
+        }
+        
+        /* === PRICE STYLES === */
+        .price-box {
+            text-align: center;
+            padding: 30px;
+            background: linear-gradient(135deg, #0bb27d 0%, #055748 100%);
+            color: white;
+            border-radius: 10px;
+            margin: 30px auto;
+            max-width: 600px;
+        }
+        
+        .old-price {
+            text-decoration: line-through;
+            font-size: 32px;
+            opacity: 0.7;
+        }
+        
+        .new-price {
+            font-size: 52px;
+            font-weight: 900;
+            margin: 10px 0;
+        }
+        
+        .offer-text {
+            font-size: 18px;
+            background: rgba(0,0,0,0.2);
+            display: inline-block;
+            padding: 5px 15px;
+            border-radius: 50px;
+        }
+        
+        /* === CTA BUTTON === */
+        .cta-button {
+            display: block;
+            width: 80%;
+            max-width: 500px;
+            margin: 30px auto;
+            padding: 25px;
+            font-size: 28px;
+            font-weight: bold;
+            color: white;
+            background: linear-gradient(135deg, #ff416c 0%, #ff4b2b 100%);
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            box-shadow: 0 10px 20px rgba(255,75,43,0.3);
+            transition: all 0.3s ease;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 25px rgba(255,75,43,0.4);
+        }
+        
+        .cta-small {
+            font-size: 16px;
+            margin-top: 10px;
+        }
+        
+        /* === IMAGE STYLES === */
+        .screenshot {
+            width: 100%;
+            max-width: 900px;
+            margin: 20px auto;
+            display: block;
+            border: 1px solid #eee;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        /* === RESPONSIVE === */
+        @media (max-width: 768px) {
+            .header h1 { font-size: 32px; line-height: 120%;}
+            .header h2 { font-size: 20px; }
+            .package-item { flex-direction: column; text-align: center; }
+            .package-icon { margin: 0 0 15px 0; }
+            .cta-button { font-size: 22px; padding: 20px; width: 90%; }
+            .new-price { font-size: 42px; }
+            .discount-badge { top: 280px; }
+            .header { top: 30px }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+
+
+        <div id="sticky-footer" style="position: fixed; top: 0; left: 0; right: 0; background: #fa2f40; color: white; padding: 15px; z-index: 1000; display: flex; justify-content: space-around; align-items: center; flex-wrap: wrap;">
+            <div style="font-weight: bold; font-size: 18px;">
+              ⏳ <span id="sticky-minutes">05</span>:<span id="sticky-seconds">00</span> LEFT AT $27!
+            </div>
+            <a href="#warriorplus-checkout-link" style="background: white; color: #ff4757; padding: 10px 20px; border-radius: 50px; font-weight: bold; text-decoration: none;">
+                Hurry! Use Coupon Code: TOTLESOFT-MM</a>
+          </div>
+          
+          <script>
+            // Sync with main timer
+            const stickyTimer = setInterval(function() {
+              const mins = document.getElementById('minutes').textContent;
+              const secs = document.getElementById('seconds').textContent;
+              document.getElementById('sticky-minutes').textContent = mins;
+              document.getElementById('sticky-seconds').textContent = secs;
+              
+              if (mins === "00" && secs === "00") {
+                document.getElementById('sticky-footer').innerHTML = '<div style="width:100%; text-align:center; font-weight:bold;">OFFER EXPIRED! PRICE INCREASED TO $97</div>';
+              }
+            }, 1000);
+          </script>
+
+
+
+        <!-- Hero Section -->
+        <div class="header">
+            <div class="discount-badge">FIRST 100: $27 ONLY!</div>
+            <h1>The $1000+ Per Month Money Machine</h1>
+            <h2>Turn Spare Time Into $32-$100 Daily With This "Set-Once & Forget" System</h2>
+        </div>
+        
+        <!-- Package Contents Section -->
+        <div class="content-box">
+            <h2 style="text-align: center; font-size: 36px; margin-bottom: 30px;">🚀 Here's Exactly What You'll Get:</h2>
+            
+            <div class="package-item">
+                <div class="package-icon">🎥</div>
+                <div>
+                    <h3>HD Video Masterclass ($297 Value)</h3>
+                    <p><strong>Watch over my shoulder</strong> as I build a real $1000/month income stream from scratch. Includes:</p>
+                    <ul>
+                        <li>Step-by-step setup tutorials (even if you're tech-challenged)</li>
+                        <li>Screen recordings of exact tools and clicks</li>
+                        <li>Troubleshooting guides for common mistakes</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="package-item">
+                <div class="package-icon">🎧</div>
+                <div>
+                    <h3>Audio Success Kit ($97 Value)</h3>
+                    <p><strong>Learn on the go</strong> with MP3 versions of all training. Perfect for:</p>
+                    <ul>
+                        <li>Commuting to your day job</li>
+                        <li>Listening while exercising</li>
+                        <li>Quick refreshers before taking action</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="package-item">
+                <div class="package-icon">📊</div>
+                <div>
+                    <h3>Pro PowerPoint Toolkit ($197 Value)</h3>
+                    <p><strong>Done-for-you templates</strong> including:</p>
+                    <ul>
+                        <li>Client presentation decks (just add your logo)</li>
+                        <li>Profit calculator spreadsheets</li>
+                        <li>Printable checklists and workflows</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <img src="images/user/vjjkpaiw6nfx1u0mkfeg.png" alt="Package Contents Preview" class="screenshot">
+        </div>
+
+
+        <!-- ======= ULTIMATE VIDEO HERO SECTION ======= -->
+<div class="video-header" style="position: relative; height: 80vh; min-height: 500px; overflow: hidden; background: #000;">
+  
+    <!-- YouTube Iframe (Autoplay, Looped) -->
+    <iframe 
+      width="100%" 
+      height="100%" 
+      src="https://youtu.be/UkuF7qok_Ho?si=Gs8up6kRGvt7rxU5" 
+      frameborder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+      allowfullscreen
+      loading="lazy"
+      style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1;">
+    </iframe>
+    
+    <!-- Fallback for Ad Blockers -->
+    <div class="video-fallback" style="display: none; position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1;">
+      <img src="images/user/coverextra.png" alt="Money Machine Preview" style="width: 100%; height: 100%; object-fit: cover;">
+    </div>
+    
+    <!-- Content Overlay -->
+    <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.5); z-index: 2; display: flex; flex-direction: column; justify-content: center; align-items: center; color: white; text-align: center; padding: 20px;">
+      <h1 class="video-title" style="font-size: 3.5em; margin-bottom: 20px; text-shadow: 2px 2px 5px rgba(0,0,0,0.5);">YOUR FIRST $1,000 IS WAITING</h1>
+      <p class="video-subtitle" style="font-size: 1.5em; max-width: 800px; margin-bottom: 30px; text-shadow: 1px 1px 3px rgba(0,0,0,0.5);">Watch how 1,437 beginners banked $32-$100/day with this system</p>
+      <a href="#cta" class="cta-button" style="font-size: 1.3em; padding: 15px 40px; background: linear-gradient(135deg, #ff416c 0%, #ff4b2b 100%); color: white; border-radius: 50px; text-decoration: none; box-shadow: 0 5px 15px rgba(255,75,43,0.3);">START NOW - $27 ONLY</a>
+    </div>
+  </div>
+  
+  <!-- Mobile CSS in <head> -->
+  <style>
+    /* Mobile Optimization */
+    @media (max-width: 768px) {
+      .video-header {
+        height: 60vh !important;
+        min-height: 400px !important;
+      }
+      .video-title {
+        font-size: 2em !important;
+        margin-bottom: 10px !important;
+      }
+      .video-subtitle {
+        font-size: 1.1em !important;
+        margin-bottom: 20px !important;
+        padding: 0 15px;
+      }
+      .cta-button {
+        font-size: 1.1em !important;
+        padding: 12px 30px !important;
+      }
+    }
+  </style>
+  
+  <!-- Fallback Script (Bottom of Page) -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Show fallback if iframe fails
+      const iframe = document.querySelector('.video-header iframe');
+      if (!iframe || getComputedStyle(iframe).display === 'none') {
+        document.querySelector('.video-fallback').style.display = 'block';
+      }
+      
+      // Pause video when not visible (save bandwidth)
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (iframe && iframe.contentWindow) {
+            if (entry.isIntersecting) {
+              iframe.contentWindow.postMessage('{"event":"command","func":"playVideo","args":""}', '*');
+            } else {
+              iframe.contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*');
+            }
+          }
+        });
+      });
+      if (iframe) observer.observe(iframe);
+    });
+  </script>
+
+        
+        <!-- Bonuses Section -->
+        <div class="content-box bonuses">
+            <h2 style="color: #ff4757;">🔥 LIMITED-TIME BONUSES (First 100 Buyers Only):</h2>
+            
+            <div style="display: flex; align-items: center; margin: 20px 0;">
+                <div style="font-size: 60px; margin-right: 20px;">🎁</div>
+                <div>
+                    <h3 style="margin-top: 0;">The "$1000 in 10 Days" Speed Guide</h3>
+                    <p>My personal cheat sheet for accelerating your first payday. Normally sells for $47.</p>
+                </div>
+            </div>
+            
+            <div style="display: flex; align-items: center; margin: 20px 0;">
+                <div style="font-size: 60px; margin-right: 20px;">🤝</div>
+                <div>
+                    <h3 style="margin-top: 0;">Private Client Access</h3>
+                    <p>Get my personal list of 17 hungry buyers waiting to pay for this service.</p>
+                </div>
+            </div>
+            
+            <img src="images/user/moneyin.png" alt="Bonus Items Preview" class="screenshot">
+        </div>
+        
+        <!-- Social Proof Section -->
+        <div class="content-box">
+            <h2 style="text-align: center;">💰 Here's What Others Are Saying:</h2>
+            
+            <div style="display: flex; flex-wrap: wrap; justify-content: space-around; margin: 30px 0;">
+                <div style="width: 45%; min-width: 300px; margin: 10px; padding: 20px; background: #f8f9fa; border-radius: 8px;">
+                    <p><em>"Made $1,217 in my first 3 weeks following this exactly. Quit my bartending job last month!"</em></p>
+                    <p><strong>- Sarah K., Chicago</strong></p>
+                </div>
+                
+                <div style="width: 45%; min-width: 300px; margin: 10px; padding: 20px; background: #f8f9fa; border-radius: 8px;">
+                    <p><em>"The PowerPoint templates alone are worth the price. I landed a clients in 4 days!"</em></p>
+                    <p><strong>- Michael T., UK</strong></p>
+                </div>
+            </div>
+            
+            <img src="images/user/gejt6njo3aakb7adxany.png" alt="Payment Proof" class="screenshot">
+        </div>
+        
+        <!-- Price Comparison Section -->
+        <div class="price-box">
+            <div class="old-price">$97</div>
+            <div class="new-price">$27</div>
+            <div class="offer-text">FIRST 100 BUYERS ONLY!</div>
+            <p style="margin-bottom: 0;">Price increases to $47 after first 100 sales</p>
+        </div>
+        
+        <!-- CTA Section -->
+        <a href="#warriorplus-checkout-link" class="cta-button">GET INSTANT ACCESS NOW</a>
+        <p style="text-align: center;" class="cta-small">30-Day Money Back Guarantee • One-Time Payment</p>
+        
+        <!-- FAQ Section -->
+        <div class="content-box">
+            <h2 style="text-align: center;">❓ Frequently Asked Questions</h2>
+            
+            <h3>Q: How soon can I see results?</h3>
+            <p>A: Most students see their first $100-300 within 7-14 days when following the steps exactly. The fastest we've seen was $217 in 3 days.</p>
+            
+            <h3>Q: Is this beginner-friendly?</h3>
+            <p>A: Absolutely! The HD videos show every click and decision. The average age of our successful students is 47 years old.</p>
+            
+            <h3>Q: What if I don't have much time?</h3>
+            <p>A> The system requires just 1-2 hours/day initially, then drops to 15-30 minutes for maintenance. Perfect for those with full-time jobs.</p>
+            
+            <h3>Q: How is this different from other money-making programs?</h3>
+            <p>A: 1) We focus on <strong>realistic</strong> $1000/month goals (not "get rich quick"), 2) You get <strong>done-for-you templates</strong>, 3) Our <strong>audio version</strong> lets you learn anywhere.</p>
+        </div>
+        
+        <!-- Final CTA -->
+        <div style="text-align: center; margin: 50px 0;">
+            <h2 style="font-size: 32px;">⏳ Only <span style="color: #ff4757;">37</span> Discounted Copies Remain!</h2>
+            <p>This special $27 pricing disappears forever when the counter hits zero or in:</p>
+            <p style="font-size: 24px; font-weight: bold;">⌛ 4 hours 12 minutes</p>
+            <a href="#warriorplus-checkout-link" class="cta-button">CLAIM YOUR $27 ACCESS NOW</a>
+            <img src="images/user/moneyback.png" alt="30-Day Guarantee" style="max-width: 300px; margin: 20px auto; display: block;">
+        </div>
+
+        <!-- 🔥 ULTIMATE HYPE SECTION -->
+<div class="content-box" style="background: linear-gradient(135deg, #fff8f0 0%, #ffe8d6 100%); border-left: 5px solid #ff9500; margin: 40px 20px; text-align: center;">
+    <h2 style="font-size: 36px; color: #e67e22; margin-bottom: 20px;">🚨 WARNING: This Opportunity WILL Disappear Soon</h2>
+    
+    <div style="display: flex; align-items: center; justify-content: center; margin: 30px 0;">
+        <div style="font-size: 80px; margin-right: 20px;">⏰</div>
+        <div>
+            <p style="font-size: 24px; font-weight: bold;">You're seeing this page at the <span style="color: #ff4757;">lowest price it will ever be!</span></p>
+            <p>When the timer hits zero or the counter reaches 100:</p>
+            <ul style="text-align: left; display: inline-block;">
+                <li>The price <strong>jumps to $47</strong> permanently</li>
+                <li>The <strong>private client list</strong> bonus disappears</li>
+                <li>You lose <strong>50% savings</strong> forever</li>
+            </ul>
+        </div>
+    </div>
+    
+    <div style="background: white; padding: 30px; border-radius: 10px; max-width: 800px; margin: 0 auto; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+        <h3 style="margin-top: 0;">Here's What Happens After You Click That Button:</h3>
+        <ol style="text-align: left; padding-left: 20px;">
+            <li><strong>Instant access</strong> to the Money Machine System (even at 2AM)</li>
+            <li><strong>Email confirmation</strong> with all download links</li>
+            <li><strong>First $100</strong> could be in your account within 7 days</li>
+            <li><strong>Freedom</strong> to work anywhere, anytime (no boss needed!)</li>
+        </ol>
+    </div>
+</div>
+
+<!-- 🏆 FINAL PUSH -->
+<div class="content-box" style="text-align: center; background: #f8f9fa; border: 2px dashed #5b37b7;">
+    <h2 style="font-size: 32px; color: #5b37b7;">Choose Your Future Right Now:</h2>
+    <p style="font-size: 20px;"><strong>Option 1:</strong> Close this page and wonder "what if?" for years</p>
+    <p style="font-size: 20px;"><strong>Option 2:</strong> Click the button below and be $1,000 richer this month</p>
+    
+    <a href="#warriorplus-checkout-link" class="cta-button" style="margin: 40px auto;">YES! I WANT MY $1000/MONTH MACHINE</a>
+    
+    </div>
+
+<!-- Payment Options Section -->
+<div style="max-width: 100%; overflow: hidden; margin: 20px 0; padding: 10px 0; text-align: center;">
+    <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 15px; padding: 0 10px;">
+      <!-- Visa -->
+      <div style="flex: 0 0 auto;">
+        <img src="images/cards/visa.png" alt="Visa" style="height: 50px; width: auto; max-width: 60px;">
+      </div>
+      
+      <!-- Mastercard -->
+      <div style="flex: 0 0 auto;">
+        <img src="images/cards/mastercard.png" alt="Mastercard" style="height: 24px; width: auto; max-width: 60px;">
+      </div>
+      
+      <!-- PayPal -->
+      <div style="flex: 0 0 auto;">
+        <img src="images/cards/paypal.png" alt="PayPal" style="height: 24px; width: auto; max-width: 60px;">
+      </div>
+      
+      <!-- American Express -->
+      <div style="flex: 0 0 auto;">
+        <img src="images/cards/amex.png" alt="American Express" style="height: 24px; width: auto; max-width: 60px;">
+      </div>
+      
+      <!-- Discover -->
+      <div style="flex: 0 0 auto;">
+        <img src="images/cards/discover.png" alt="Discover" style="height: 24px; width: auto; max-width: 60px;">
+      </div>
+      
+      <!-- Stripe -->
+      <div style="flex: 0 0 auto;">
+        <img src="images/cards/stripe.png" alt="Stripe" style="height: 24px; width: auto; max-width: 60px;">
+      </div>
+    </div>
+  </div>
+  
+  <style>
+    @media (max-width: 600px) {
+      .payment-methods-container {
+        gap: 8px !important;
+      }
+      .payment-methods-container img {
+        height: 20px !important;
+      }
+    }
+  </style>
+
+
+
+
+<!-- 🚨 URGENCY HYPE SECTION -->
+<div class="content-box" style="background: linear-gradient(135deg, #fff0f0 0%, #ffdfdf 100%); border: 2px solid #ff4757; text-align: center; margin: 40px 20px; padding: 30px; border-radius: 10px;">
+  
+    <h2 style="color: #ff4757; font-size: 36px; margin-top: 0;">⚠️ WARNING: Offer Expires In...</h2>
+    
+    <!-- 5-Minute Countdown Timer -->
+    <div id="countdown-timer" style="font-size: 48px; font-weight: bold; color: #ff4757; margin: 20px 0;">
+      <span id="minutes">05</span>:<span id="seconds">00</span>
+    </div>
+    
+    <p style="font-size: 20px;"><strong>This $27 discount WILL disappear when the timer hits zero!</strong></p>
+    
+    <div style="background: white; padding: 20px; border-radius: 8px; margin: 20px auto; max-width: 700px;">
+      <h3 style="margin-top: 0;">Here's What You Risk Losing:</h3>
+      <ul style="text-align: left; display: inline-block;">
+        <li><strong>Lifetime access</strong> to the Money Machine system</li>
+        <li><strong>Private client list</strong> (17 ready-to-pay buyers)</li>
+        <li><strong>$70 savings</strong> (price jumps to $97 after timer)</li>
+        <li><strong>Free bonuses</strong> worth $144</li>
+      </ul>
+    </div>
+    
+    <a href="#warriorplus-checkout-link" class="cta-button" style="margin: 20px auto;">CLAIM MY $27 DISCOUNT NOW</a>
+    
+    <p style="font-size: 14px; color: #777;"><em>Your timer is locked to this browser - don't refresh or you'll lose your spot!</em></p>
+  </div>
+  
+  <!-- 🔥 SOCIAL PROOF HYPE -->
+  <div class="content-box" style="background: #f8f9fa; border-left: 5px solid #6e48aa; margin: 40px 20px; padding: 30px;">
+    <h2 style="text-align: center; margin-top: 0;">🚀 WORDS FROM GREAT <em>ACHIEVERS</em></h2>
+    
+    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; margin: 30px 0;">
+      <!-- Testimonial 1 -->
+      <div style="flex: 1; min-width: 250px; background: white; padding: 20px; border-radius: 8px; box-shadow: 0 3px 10px rgba(0,0,0,0.1);">
+        <p style="font-style: italic;">"Opportunity is missed by most people because it is dressed in overalls and looks like work."</p>
+        <p style="font-weight: bold; color: #6e48aa;">- Thomas Edison (Inventor, 1847-1931)</p>
+      </div>
+      
+      <!-- Testimonial 2 -->
+      <div style="flex: 1; min-width: 250px; background: white; padding: 20px; border-radius: 8px; box-shadow: 0 3px 10px rgba(0,0,0,0.1);">
+        <p style="font-style: italic;">"The biggest risk is not taking any risk. In a world that's changing quickly, the only strategy that is guaranteed to fail is not taking risks."</p>
+        <p style="font-weight: bold; color: #6e48aa;">- Mark Zuckerberg (Facebook Founder, b. 1984)</p>
+      </div>
+    </div>
+    
+    <img src="images/user/coverextra.png" alt="Live Results Coming In" style="max-width: 100%; border-radius: 8px; margin-top: 20px; border: 1px solid #eee;">
+  </div>
+  
+  <!-- Timer Script -->
+  <script>
+    // 5-minute countdown timer
+    let minutes = 5;
+    let seconds = 0;
+    
+    const timer = setInterval(function() {
+      if (seconds === 0) {
+        if (minutes === 0) {
+          clearInterval(timer);
+          document.getElementById('countdown-timer').innerHTML = "OFFER EXPIRED!";
+          return;
+        }
+        minutes--;
+        seconds = 59;
+      } else {
+        seconds--;
+      }
+      
+      document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
+      document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
+    }, 1000);
+  </script>
+
+
+
+<div class="content-box" style="background: #f8faff; border-left: 5px solid #3a7bd5; padding: 40px 30px; margin: 40px 20px;">
+    <h2 style="text-align: center; color: #3a7bd5; font-size: 36px; margin-top: 0;">💎 THIS CHANGES EVERYTHING</h2>
+    <div style="display: flex; align-items: center; flex-wrap: wrap; gap: 30px;">
+      <div style="flex: 1; min-width: 300px;">
+        <h3 style="color: #3a7bd5;">The OLD Way:</h3>
+        <ul style="color: #666;">
+          <li>❌ Wasting months on trial-and-error</li>
+          <li>❌ Complex strategies that never work</li>
+          <li>❌ Begging for clients on Fiverr/Upwork</li>
+        </ul>
+      </div>
+      <div style="flex: 1; min-width: 300px;">
+        <h3 style="color: #3a7bd5;">The MONEY MACHINE Way:</h3>
+        <ul style="color: #2ecc71; font-weight: bold;">
+          <li>✅ Plug-and-play system (works in 1 hour)</li>
+          <li>✅ Done-for-you templates</li>
+          <li>✅ Buyers WAITING to pay you</li>
+        </ul>
+      </div>
+    </div>
+    <img src="images/user/machineway.png" alt="Before/After Results" style="max-width: 100%; margin-top: 30px; border-radius: 8px;">
+  </div>
+
+
+  <div class="content-box" style="background: white; text-align: center; padding: 40px 20px; margin: 40px 20px; border: 1px solid #eee;">
+    <h2 style="font-size: 36px; margin-top: 0;">⚙️ HOW YOUR MONEY MACHINE WORKS</h2>
+    <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 20px; margin: 40px 0;">
+      <!-- Step 1 -->
+      <div style="flex: 0 0 200px; background: #f0f7ff; padding: 20px; border-radius: 10px;">
+        <div style="font-size: 40px; margin-bottom: 10px;">1️⃣</div>
+        <h3 style="margin: 0;">Get Access</h3>
+        <p style="font-size: 14px;">Instant download after purchase</p>
+      </div>
+      <!-- Step 2 -->
+      <div style="flex: 0 0 200px; background: #f0f7ff; padding: 20px; border-radius: 10px;">
+        <div style="font-size: 40px; margin-bottom: 10px;">2️⃣</div>
+        <h3 style="margin: 0;">Copy & Paste</h3>
+        <p style="font-size: 14px;">Use our DFY templates</p>
+      </div>
+      <!-- Step 3 -->
+      <div style="flex: 0 0 200px; background: #f0f7ff; padding: 20px; border-radius: 10px;">
+        <div style="font-size: 40px; margin-bottom: 10px;">3️⃣</div>
+        <h3 style="margin: 0;">Activate Traffic</h3>
+        <p style="font-size: 14px;">Use our buyer list</p>
+      </div>
+      <!-- Step 4 -->
+      <div style="flex: 0 0 200px; background: #f0f7ff; padding: 20px; border-radius: 10px;">
+        <div style="font-size: 40px; margin-bottom: 10px;">4️⃣</div>
+        <h3 style="margin: 0;">Get Paid</h3>
+        <p style="font-size: 14px;">$100-$500/day</p>
+      </div>
+    </div>
+    <a href="#warriorplus-checkout-link" class="cta-button" style="max-width: 500px;">START YOUR MONEY MACHINE NOW</a>
+  </div>
+
+
+  <div class="content-box" style="background: linear-gradient(135deg, #fff8e6 0%, #ffecb3 100%); padding: 40px; margin: 40px 20px; text-align: center; border-radius: 10px;">
+    <h2 style="color: #e67e22; font-size: 36px; margin-top: 0;">⏳ WHY 2025 IS THE PERFECT TIME TO START</h2>
+    <div style="max-width: 800px; margin: 0 auto;">
+      <p style="font-size: 20px;"><strong>Market research shows:</strong> Demand for "done-for-you" money systems <span style="color: #e67e22; font-weight: bold;">increased by 317%</span> since 2022.</p>
+      <img src="images/user/marketgrowth.png" alt="Market Growth Chart" style="max-width: 100%; margin: 20px 0; border-radius: 8px;">
+      <p><strong>BUT...</strong> Competition is growing fast. <span style="color: #e67e22;">Early adopters</span> who start now will dominate while others hesitate.</p>
+      <a href="#warriorplus-checkout-link" class="cta-button" style="background: linear-gradient(135deg, #e67e22 0%, #d35400 100%); margin: 30px auto;">BE AN EARLY ADOPTER - $27 ONLY</a>
+    </div>
+  </div>
+
+
+  <div class="content-box" style="background: #f9f9f9; padding: 40px 20px; margin: 40px 20px; text-align: center;">
+    <h2 style="font-size: 36px; margin-top: 0;">📦 HERE'S EVERYTHING YOU GET TODAY</h2>
+    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; margin: 40px 0;">
+      <!-- Main Product -->
+      <div style="flex: 0 0 300px; background: white; padding: 20px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
+        <h3 style="color: #6e48aa;">Main System</h3>
+        <p><strong>$1000/Month Blueprint</strong></p>
+        <p>HD Videos + Audio + Templates</p>
+        <p style="color: #6e48aa; font-weight: bold;">Value: $297</p>
+      </div>
+      <!-- Bonuses -->
+      <div style="flex: 0 0 300px; background: white; padding: 20px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
+        <h3 style="color: #ff4757;">Fast-Action Bonuses</h3>
+        <p><strong>1) $1000 in 10 Days Guide</strong></p>
+        <p><strong>2) Private Buyer List</strong></p>
+        <p style="color: #ff4757; font-weight: bold;">Value: $144</p>
+      </div>
+      <!-- Support -->
+      <div style="flex: 0 0 300px; background: white; padding: 20px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
+        <h3 style="color: #2ecc71;">Support</h3>
+        <p><strong>24/7 Customer Help</strong></p>
+        <p><strong>30-Day Guarantee</strong></p>
+        <p style="color: #2ecc71; font-weight: bold;">Priceless</p>
+      </div>
+    </div>
+    <div style="background: white; max-width: 700px; margin: 0 auto; padding: 20px; border-radius: 10px; border: 2px dashed #6e48aa;">
+      <p style="font-size: 24px; margin: 0;">Total Value: <span style="text-decoration: line-through;">$441</span></p>
+      <p style="font-size: 36px; color: #ff4757; margin: 10px 0; font-weight: bold;">Today Just $27</p>
+      <p style="font-size: 14px;">(Save $414 - 93% OFF)</p>
+    </div>
+  </div>
+
+
+
+
+  <!-- ANIMATED PRODUCT SHOWCASE SECTION -->
+<div class="content-box" style="background: #f5f7ff; padding: 40px 20px; margin: 40px 20px; text-align: center; border-radius: 10px;">
+    <h2 style="font-size: 36px; margin-top: 0;">✨ SEE WHAT YOU'RE GETTING</h2>
+    <p style="font-size: 18px; max-width: 700px; margin: 0 auto 30px;">Watch as we reveal each powerful component of your Money Machine System:</p>
+    
+    <!-- Animated Showcase Container -->
+    <div id="product-showcase" style="position: relative; height: 400px; max-width: 600px; margin: 0 auto;">
+      <!-- Product Images (Will Cycle) -->
+      <img src="images/user/vjjkpaiw6nfx1u0mkfeg.png" alt="Main Course" 
+           style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; opacity: 1; transition: opacity 0.5s ease; border-radius: 8px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+      
+      <img src="images/user/videolessoncover.png" alt="HD Quality Video Lessons" 
+           style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; opacity: 0; transition: opacity 0.5s ease; border-radius: 8px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+      
+      <img src="images/user/audiolessoncover.png" alt="Clear Audio Lessons" 
+           style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; opacity: 0; transition: opacity 0.5s ease; border-radius: 8px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+      
+      <img src="images/user/powerpointcover.png" alt="Done-For-You Templates" 
+           style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; opacity: 0; transition: opacity 0.5s ease; border-radius: 8px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+      
+      <!-- Navigation Dots -->
+      <div style="position: absolute; bottom: -30px; left: 0; right: 0; display: flex; justify-content: center; gap: 10px;">
+        <span class="dot active" style="width: 12px; height: 12px; background: #6e48aa; border-radius: 50%; cursor: pointer;"></span>
+        <span class="dot" style="width: 12px; height: 12px; background: #ccc; border-radius: 50%; cursor: pointer;"></span>
+        <span class="dot" style="width: 12px; height: 12px; background: #ccc; border-radius: 50%; cursor: pointer;"></span>
+        <span class="dot" style="width: 12px; height: 12px; background: #ccc; border-radius: 50%; cursor: pointer;"></span>
+      </div>
+    </div>
+    
+    <!-- Caption Text -->
+    <div id="showcase-caption" style="margin-top: 50px; font-weight: bold; font-size: 20px; min-height: 30px;">
+      $1000+ Per Month Money Machine System
+    </div>
+  </div>
+  
+  <!-- Animation Script -->
+  <script>
+    // Product showcase animation
+    const images = document.querySelectorAll('#product-showcase img');
+    const dots = document.querySelectorAll('.dot');
+    const caption = document.getElementById('showcase-caption');
+    let currentIndex = 0;
+    
+    const captions = [
+      "$1000+ Per Month Money Machine System",
+      "HD Quality Video Lessons",
+      "Clear Audio Lessons",
+      "Done-For-You PP Templates (Just Add Your Logo)"
+    ];
+    
+    function showImage(index) {
+      // Hide all images
+      images.forEach(img => img.style.opacity = 0);
+      dots.forEach(dot => dot.style.background = '#ccc');
+      
+      // Show selected image
+      images[index].style.opacity = 1;
+      dots[index].style.background = '#6e48aa';
+      caption.textContent = captions[index];
+      
+      currentIndex = index;
+    }
+    
+    // Auto-rotate every 2 seconds
+    setInterval(() => {
+      let nextIndex = (currentIndex + 1) % images.length;
+      showImage(nextIndex);
+    }, 2000);
+    
+    // Click on dots to navigate
+    dots.forEach((dot, index) => {
+      dot.addEventListener('click', () => {
+        showImage(index);
+      });
+    });
+  </script>
+
+
+
+<div style="background: #ffefef; border-left: 5px solid #ff0000; padding: 30px; margin: 40px 0; text-align: center;">
+    <h2 style="color: #ff0000; font-size: 2.5em;">🚨 WARNING: Your Financial Future is at Stake</h2>
+    <p style="font-size: 1.2em;">Every day you <strong>don't</strong> take action, you're losing:</p>
+    <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 20px; margin: 30px 0;">
+      <div style="background: white; padding: 15px; border-radius: 8px; min-width: 200px;">
+        <p style="font-size: 2em; margin: 0; color: #ff0000;">$32-$100</p>
+        <p>Potential daily income</p>
+      </div>
+      <div style="background: white; padding: 15px; border-radius: 8px; min-width: 200px;">
+        <p style="font-size: 2em; margin: 0; color: #ff0000;">$1,000+</p>
+        <p>Monthly freedom</p>
+      </div>
+    </div>
+    <p style="font-weight: bold; font-size: 1.3em;">The question isn't "Can you afford this?" — it's "Can you afford NOT to?"</p>
+  </div>
+
+
+
+  <div style="background: linear-gradient(135deg, #f0f5ff 0%, #e6eeff 100%); padding: 40px 20px; text-align: center;">
+    <h2 style="font-size: 2.8em; margin-top: 0;">MEET OUR $1,000/MONTH CLUB</h2>
+    <div style="display: flex; overflow-x: auto; gap: 20px; padding: 20px 0; scroll-snap-type: x mandatory;">
+      
+        <!-- Testimonial 1 -->
+      <div style="flex: 0 0 300px; scroll-snap-align: start; background: white; padding: 25px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+        <img src="images/testimonial-1.jpg" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; border: 3px solid #6e48aa; margin: 0 auto 15px;">
+        <p style="font-style: italic;">"I was making $9/hour at Starbucks. 14 days after buying this, I made $1,143. My manager's face when I quit? Priceless."</p>
+        <p style="font-weight: bold;">— Jason T. (First $1K in 16 Days)</p>
+        <div style="display: flex; justify-content: center; margin-top: 15px;">
+          <span style="background: gold; padding: 3px 10px; border-radius: 20px; font-size: 0.8em; font-weight: bold;">TOP PERFORMER</span>
+        </div>
+      </div>
+
+       <!-- Testimonial 2 -->
+       <div style="flex: 0 0 300px; scroll-snap-align: start; background: white; padding: 25px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+        <img src="images/testimonial-1.jpg" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; border: 3px solid #6e48aa; margin: 0 auto 15px;">
+        <p style="font-style: italic;">"I was making $9/hour at Starbucks. 14 days after buying this, I made $1,143. My manager's face when I quit? Priceless."</p>
+        <p style="font-weight: bold;">— Jason T. (First $1K in 16 Days)</p>
+        <div style="display: flex; justify-content: center; margin-top: 15px;">
+          <span style="background: gold; padding: 3px 10px; border-radius: 20px; font-size: 0.8em; font-weight: bold;">TOP PERFORMER</span>
+        </div>
+      </div>
+
+       <!-- Testimonial 3 -->
+       <div style="flex: 0 0 300px; scroll-snap-align: start; background: white; padding: 25px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+        <img src="images/testimonial-1.jpg" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; border: 3px solid #6e48aa; margin: 0 auto 15px;">
+        <p style="font-style: italic;">"I was making $9/hour at Starbucks. 14 days after buying this, I made $1,143. My manager's face when I quit? Priceless."</p>
+        <p style="font-weight: bold;">— Jason T. (First $1K in 16 Days)</p>
+        <div style="display: flex; justify-content: center; margin-top: 15px;">
+          <span style="background: gold; padding: 3px 10px; border-radius: 20px; font-size: 0.8em; font-weight: bold;">TOP PERFORMER</span>
+        </div>
+      </div>
+
+
+      <!-- Add 2-3 more testimonials -->
+    </div>
+  </div>
+
+
+
+  <div style="background: linear-gradient(135deg, #6e48aa 0%, #9d50bb 100%); color: white; padding: 40px 20px; text-align: center;">
+  <h2 style="font-size: 2.5em; margin-top: 0;">YOUR EXCLUSIVE BONUS PACKAGE</h2>
+  <div id="bonus-timer" style="font-size: 2em; margin: 20px 0;">
+    <span id="bonus-hours">00</span>:<span id="bonus-minutes">15</span>:<span id="bonus-seconds">00</span>
+  </div>
+  <p style="font-size: 1.3em;">These free gifts disappear when the timer hits zero:</p>
+  
+  <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 20px; margin: 30px 0;">
+    <div style="background: rgba(255,255,255,0.2); backdrop-filter: blur(10px); padding: 20px; border-radius: 10px; max-width: 300px;">
+      <h3 style="color: #ffcc00;">The $1K Fast Start Kit</h3>
+      <p>Normally $47 - <strong>FREE TODAY</strong></p>
+    </div>
+    <!-- Add 2 more bonus boxes -->
+  </div>
+  
+  <script>
+    // 15-minute bonus timer
+    let bonusMinutes = 15;
+    let bonusSeconds = 0;
+    
+    setInterval(() => {
+      if (bonusSeconds === 0) {
+        if (bonusMinutes === 0) {
+          document.getElementById('bonus-timer').innerHTML = "BONUSES EXPIRED!";
+          return;
+        }
+        bonusMinutes--;
+        bonusSeconds = 59;
+      } else {
+        bonusSeconds--;
+      }
+      
+      document.getElementById('bonus-minutes').textContent = bonusMinutes.toString().padStart(2, '0');
+      document.getElementById('bonus-seconds').textContent = bonusSeconds.toString().padStart(2, '0');
+    }, 1000);
+  </script>
+</div>
+
+
+
+<!-- 👣 PROFESSIONAL FOOTER -->
+<footer style="background: #013b26; color: white; padding: 30px 20px; text-align: center; margin-top: 50px;">
+    <div style="max-width: 800px; margin: 0 auto;">
+        <img src="images/user/moneyback.png" alt="Money Back Guarantee" style="max-width: 200px; margin-bottom: 20px;">
+        <p>© Totlesoft 2025. All Rights Reserved.</p>
+        <p style="font-size: 14px; opacity: 0.8; margin-top: 20px;">
+            <a href="https://docs.google.com/document/d/1AyhHRbKN48HgxU4q9kDizJXcXeU0CsqeEblrF7ar64s/edit?usp=sharing" style="color: #fff; text-decoration: underline;">Terms and Condition</a> | 
+            <a href="https://docs.google.com/document/d/17eyY10wmZIUGjdw0Xlli-nkNXN_zCgg6_5_uW-2_D0k/edit?usp=sharing" style="color: #fff; text-decoration: underline;">Privacy Policy</a> |
+            <a href="https://wa.me/447418375846" style="color: #fff; text-decoration: underline;">Contact Us</a> 
+        </p>
+        <p style="font-size: 14px; margin-top: 20px;">
+            Disclaimer: Results not typical. Your success depends on taking action. This is not a "get rich quick" scheme. <br/>
+            This website in no way is affiliated with facebook or youtube entities. Once you leave facebook the responsibility no longer is on their site. We make every attempt to clearly state and show all proof. We do not sell your email or any information. CAN-SPAM compliant. If you have any questions please feel free to contact us here. All trademarks and logos are the property of their respective owners. 
+
+            This site and the products and services offered on this site are not associated, affiliated, endorsed, or sponsored by any business listed on this page nor have they been reviewed tested or certified by any other company listed on this page. The results shown are not typical and results will vary based on your market, your efforts, competition and many other factors outside of our control. 
+
+            The conditional guarantee is not a promise of payout whatsoever. It's merely there to show you that we're confident about  what we're offering. To qualify for the conditional guarantee you must show clear cut evidence that you've done the work and asked for help and we weren't able to solve the problem.
+        </p>
+    </div>
+</footer>
+    </div>
+</body>
+</html>
