@@ -276,81 +276,37 @@
 
 
         <!-- ======= ULTIMATE VIDEO HERO SECTION ======= -->
-<div class="video-header" style="position: relative; height: 80vh; min-height: 500px; overflow: hidden; background: #000;">
-  
-    <!-- YouTube Iframe (Autoplay, Looped) -->
-    <iframe 
-      width="100%" 
-      height="100%" 
-      src="https://youtu.be/UkuF7qok_Ho?si=Gs8up6kRGvt7rxU5" 
-      frameborder="0" 
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-      allowfullscreen
-      loading="lazy"
-      style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1;">
-    </iframe>
-    
-    <!-- Fallback for Ad Blockers -->
-    <div class="video-fallback" style="display: none; position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1;">
-      <img src="images/user/coverextra.png" alt="Money Machine Preview" style="width: 100%; height: 100%; object-fit: cover;">
-    </div>
-    
-    <!-- Content Overlay -->
-    <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.5); z-index: 2; display: flex; flex-direction: column; justify-content: center; align-items: center; color: white; text-align: center; padding: 20px;">
-      <h1 class="video-title" style="font-size: 3.5em; margin-bottom: 20px; text-shadow: 2px 2px 5px rgba(0,0,0,0.5);">YOUR FIRST $1,000 IS WAITING</h1>
-      <p class="video-subtitle" style="font-size: 1.5em; max-width: 800px; margin-bottom: 30px; text-shadow: 1px 1px 3px rgba(0,0,0,0.5);">Watch how 1,437 beginners banked $32-$100/day with this system</p>
-      <a href="#cta" class="cta-button" style="font-size: 1.3em; padding: 15px 40px; background: linear-gradient(135deg, #ff416c 0%, #ff4b2b 100%); color: white; border-radius: 50px; text-decoration: none; box-shadow: 0 5px 15px rgba(255,75,43,0.3);">START NOW - $27 ONLY</a>
-    </div>
+
+    <div class="video-header" style="text-align:center;">
+  <iframe 
+    src="https://streamable.com/e/9ivx14" 
+    width="640" 
+    height="360" 
+    frameborder="0" 
+    allowfullscreen 
+    allow="autoplay; encrypted-media"
+    loading="lazy">
+  </iframe>
+
+  <div class="video-fallback" style="display:none; margin-top:10px;">
+    <p>Video not loading? <a href="https://streamable.com/9ivx14" target="_blank">Click here to watch it directly.</a></p>
   </div>
-  
-  <!-- Mobile CSS in <head> -->
-  <style>
-    /* Mobile Optimization */
-    @media (max-width: 768px) {
-      .video-header {
-        height: 60vh !important;
-        min-height: 400px !important;
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const iframe = document.querySelector('.video-header iframe');
+    const fallback = document.querySelector('.video-fallback');
+
+    // Show fallback if iframe doesn't load after a delay
+    const timeout = setTimeout(() => {
+      if (!iframe || iframe.offsetHeight === 0) {
+        fallback.style.display = 'block';
       }
-      .video-title {
-        font-size: 2em !important;
-        margin-bottom: 10px !important;
-      }
-      .video-subtitle {
-        font-size: 1.1em !important;
-        margin-bottom: 20px !important;
-        padding: 0 15px;
-      }
-      .cta-button {
-        font-size: 1.1em !important;
-        padding: 12px 30px !important;
-      }
-    }
-  </style>
-  
-  <!-- Fallback Script (Bottom of Page) -->
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      // Show fallback if iframe fails
-      const iframe = document.querySelector('.video-header iframe');
-      if (!iframe || getComputedStyle(iframe).display === 'none') {
-        document.querySelector('.video-fallback').style.display = 'block';
-      }
-      
-      // Pause video when not visible (save bandwidth)
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-          if (iframe && iframe.contentWindow) {
-            if (entry.isIntersecting) {
-              iframe.contentWindow.postMessage('{"event":"command","func":"playVideo","args":""}', '*');
-            } else {
-              iframe.contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*');
-            }
-          }
-        });
-      });
-      if (iframe) observer.observe(iframe);
-    });
-  </script>
+    }, 3000); // 3 seconds timeout for loading iframe
+  });
+</script>
+    
 
         
         <!-- Bonuses Section -->
